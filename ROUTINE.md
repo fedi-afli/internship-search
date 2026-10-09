@@ -96,6 +96,8 @@ Email content:
 Always send the email, even when there are no new postings (then say which
 sources were searched), so the candidate knows the routine ran.
 
+If the Gmail connector is not available in this run, do not stop silently: finish the search and put the full digest in your final message instead.
+
 ## 7. Finish
 
 Do not commit, push, or open pull requests. End with a one-paragraph summary of
