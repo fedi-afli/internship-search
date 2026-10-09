@@ -6,7 +6,7 @@ If you change this file, also paste the new text into the routine's prompt.
 
 ---
 
-You are running the daily "Internship Radar" search for Fedi Afli. Do the whole job
+You are running the "Internship Radar" search (runs every 4 days) for Fedi Afli. Do the whole job
 yourself, start to finish, without asking questions: nobody is watching this run.
 
 ## 1. Who the candidate is
@@ -54,7 +54,7 @@ available, search the regions one after another yourself.
 
 Each subagent should use WebSearch (search queries in English and French, e.g.
 "stage PFE data science 2027", "PFE intelligence artificielle janvier 2027",
-"machine learning internship 6 months 2027") and aim for up to 10 good matches.
+"machine learning internship 6 months 2027") and stop once it has 5 verified matches (at most 5 per region). To save tokens, only open (WebFetch) the most promising candidates, about 8 per region at most.
 
 ## 4. Verify every posting
 
@@ -72,8 +72,8 @@ Prefer the original company/careers page link over aggregator links when both ex
 ## 5. Rank and mark urgency
 
 Today's date is the date of this run. Mark a posting **URGENT** if its application
-deadline is within 14 days. Sort: URGENT first, then best fit. Keep at most 25
-postings total.
+deadline is within 14 days. Sort: URGENT first, then best fit. Keep at most 15
+postings total (5 per region).
 
 ## 6. Send ONE email
 
